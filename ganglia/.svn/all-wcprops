@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia
+END
+ganglia-web-3.5.8-1.fc19.x86_64.rpm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia/ganglia-web-3.5.8-1.fc19.x86_64.rpm
+END
+php-gd-5.5.5-1.fc19.x86_64.rpm
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia/php-gd-5.5.5-1.fc19.x86_64.rpm
+END
+libganglia-3.6.0-1.x86_64.rpm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia/libganglia-3.6.0-1.x86_64.rpm
+END
+php-ZendFramework-1.12.3-1.fc19.noarch.rpm
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia/php-ZendFramework-1.12.3-1.fc19.noarch.rpm
+END
+ganglia-devel-3.6.0-1.x86_64.rpm
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia/ganglia-devel-3.6.0-1.x86_64.rpm
+END
+ganglia-gmetad-3.6.0-1.x86_64.rpm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia/ganglia-gmetad-3.6.0-1.x86_64.rpm
+END
+libconfuse-2.6-3.el6.x86_64.rpm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia/libconfuse-2.6-3.el6.x86_64.rpm
+END
+apr-devel-1.3.9-1.x86_64.rpm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia/apr-devel-1.3.9-1.x86_64.rpm
+END
+ganglia-gmond-3.6.0-1.x86_64.rpm
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/ganglia/ganglia-gmond-3.6.0-1.x86_64.rpm
+END

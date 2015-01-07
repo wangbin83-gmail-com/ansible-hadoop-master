@@ -1,0 +1,5 @@
+---
+# Start HDFS
+- name: Start HDFS on datanodes
+  action: service name=hadoop-hdfs-datanode state=started
+  tags: hdfs

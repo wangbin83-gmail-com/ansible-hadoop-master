@@ -1,0 +1,13 @@
+---
+- hosts: hadoop
+  sudo: True
+
+  tasks:
+  - name: copy R
+    copy: src=pkgs/hadoop-lzo-cdh4-0.4.15-1.gplextras.p0.103.el6.x86_64.rpm dest=/tmp/ owner=root group=root mode=755
+
+  - name: copy install script 
+    copy: src=script/install-hadoop-lzo.sh dest=/tmp/ owner=root group=root mode=755
+
+  - name: exe install-r.sh 
+    command: chdir=/tmp/ sudo ./install-hadoop-lzo.sh > /dev/null

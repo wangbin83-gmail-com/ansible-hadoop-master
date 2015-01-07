@@ -1,0 +1,28 @@
+---
+- hosts: hadoop 
+  sudo: True
+  sudo_user: root 
+  vars:
+    hostname : '$ansible_hostname'
+  tasks:
+  #- name: copy ganglia packages
+  #  action: copy src=ganglia/$item dest=/tmp/ mode=755
+  #  with_items:
+  #  - ganglia-gmond-3.6.0-1.x86_64.rpm
+  #  - libconfuse-2.6-3.el6.x86_64.rpm
+  #  - libganglia-3.6.0-1.x86_64.rpm
+
+  #- name: install packages
+  #  command: sudo rpm -ivh --nodeps /tmp/$item
+  #  with_items:
+  #  - libconfuse-2.6-3.el6.x86_64.rpm
+  #  - libganglia-3.6.0-1.x86_64.rpm
+  #  - ganglia-gmond-3.6.0-1.x86_64.rpm
+  - name: copy gmond conf
+    action: copy src=/etc/ganglia/gmond.conf dest=/etc/ganglia/ owner=root group=root mode=0644
+
+  - name: change gmond conf
+    command: sudo sed -i "s/%hostname%/${ansible_hostname}/" /etc/ganglia/gmond.conf
+
+  - name: start gmond
+    command: sudo gmond -c /etc/ganglia/gmond.conf

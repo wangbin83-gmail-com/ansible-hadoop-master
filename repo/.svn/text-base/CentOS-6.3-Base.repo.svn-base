@@ -1,0 +1,27 @@
+[base]
+name=CentOS-6.3 - Base
+baseurl=http://172.17.58.25/centos6.3
+gpgcheck=1
+gpgkey=http://172.17.58.25/centos6.3/RPM-GPG-KEY-CentOS-6
+#[updates]
+#name=CentOS-6.3 - Updates
+#baseurl=http://mirrors.360buy.com/CentOS/6.3/updates/$basearch/
+#gpgcheck=1
+#gpgkey=http://mirrors.360buy.com/CentOS/6.3/os/x86_64/RPM-GPG-KEY-CentOS-$releasever
+#[extras]
+#name=CentOS-6.3 - Extras
+#baseurl=http://mirrors.360buy.com/CentOS/6.3/extras/$basearch/
+#gpgcheck=1
+#gpgkey=http://mirrors.360buy.com/CentOS/6.3/os/x86_64/RPM-GPG-KEY-CentOS-$releasever
+#[centosplus]
+#name=CentOS-6.3 - Plus
+#baseurl=http://mirrors.360buy.com/CentOS/6.3/centosplus/$basearch/
+#gpgcheck=1
+#enabled=0
+#gpgkey=http://mirrors.360buy.com/CentOS/6.3/os/x86_64/RPM-GPG-KEY-CentOS-$releasever
+#[contrib]
+#name=CentOS-6.3 - Contrib
+#baseurl=http://mirrors.360buy.com/CentOS/6.3/contrib/$basearch/
+#gpgcheck=1
+#enabled=0
+#gpgkey=http://mirrors.360buy.com/CentOS/6.3/os/x86_64/RPM-GPG-KEY-CentOS-$releasever

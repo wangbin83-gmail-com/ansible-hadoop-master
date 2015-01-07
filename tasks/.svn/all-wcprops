@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/tasks
+END
+start-hdfs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/tasks/start-hdfs.yml
+END
+start-mapred.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/tasks/start-mapred.yml
+END
+stop-hdfs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/tasks/stop-hdfs.yml
+END
+install-pkgs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/tasks/install-pkgs.yml
+END
+restart-mapred.yml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/tasks/restart-mapred.yml
+END
+stop-mapred.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/tasks/stop-mapred.yml
+END
+make-dirs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/tasks/make-dirs.yml
+END
+copy-config.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/tasks/copy-config.yml
+END

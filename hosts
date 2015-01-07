@@ -1,0 +1,34 @@
+# This is the default ansible 'hosts' file.  #
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+[secondmaster]
+BP-YZH-2-5936.360buy.com
+BP-YZH-2-5928.360buy.com
+
+[cluster]
+BP-YZH-2-59[69:78].360buy.com
+BP-YZH-2-59[49:58].360buy.com
+
+[hadoop:children]
+cluster
+secondmaster
+
+[hadoop]
+#BP-YZH-2-5920.360buy.com
+
+
+[hadoop:vars]
+namenode=BP-YZH-2-5920
+resource_manager=BP-YZH-2-5920
+history_server=BP-YZH-2-5920
+
+[zookeeper]
+BP-YZH-2-5920.360buy.com
+BP-YZH-2-5936.360buy.com
+BP-YZH-2-5950.360buy.com

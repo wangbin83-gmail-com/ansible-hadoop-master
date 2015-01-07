@@ -1,0 +1,22 @@
+---
+- hosts: secondmaster
+  sudo: True
+
+  tasks:
+  #- name: copy R
+  #  copy: src=pkgs/R-3.0.2.tar.gz dest=/tmp/ owner=root group=root mode=755
+
+  #- name: copy install script 
+  #  copy: src=script/install-R.sh dest=/tmp/ owner=root group=root mode=755
+
+  #- name: exe install-r.sh 
+  #  command: chdir=/tmp/ sudo ./install-R.sh > /dev/null
+
+  #- name: add group
+  #  command: groupadd ruser
+
+  - name: copy add user script 
+    copy: src=script/add_ruser.sh dest=/tmp/ mode=755 
+
+  - name: add user to group
+    command: chdir=/tmp/ sudo ./add_ruser.sh

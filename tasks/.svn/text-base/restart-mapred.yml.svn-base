@@ -1,0 +1,5 @@
+---
+# Start MapReduce.
+- name: Start Node Manager on datanodes
+  action: service name=hadoop-yarn-nodemanager state=restarted
+  tags: mapred

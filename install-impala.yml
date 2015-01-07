@@ -1,0 +1,44 @@
+---
+- hosts: cluster 
+  sudo: True
+
+  tasks:
+  #- name: copy llvm
+  #  copy: src=pkgs/llvm-3.2.src.tgz dest=/tmp/ owner=root group=root mode=755
+
+  #- name: copy tar sh
+  #  copy: src=script/untar_llvm.sh dest=/tmp/ owner=root group=root mode=755
+
+  #- name: untar llvm
+  #  command: chdir=/tmp/ sudo ./untar_llvm.sh
+
+  #- name: copy boost
+  #  copy: src=/tmp/boost_1_54_0.tar.gz dest=/tmp/ owner=root group=root mode=755
+  #- name: copy install sh
+  #  copy: src=script/install_boost.sh dest=/tmp/ owner=root group=root mode=755
+  #- name: run install.sh
+  #  command: chdir=/tmp/ sudo ./install_boost.sh
+  #- name: copy install sh
+  #  copy: src=script/install_yum.sh dest=/tmp/ owner=root group=root mode=755
+  #- name: run install.sh
+  #  command: chdir=/tmp/ sudo ./install_yum.sh
+  #- name: copy impala.zip 
+  #  copy: src=/tmp/impala.zip dest=/tmp/
+  #- name: copy impala impala sh
+  #  copy: src=script/install-impala.sh dest=/tmp/ owner=root group=root mode=755
+  #- name: run install impala.sh
+  #  command: chdir=/tmp/ sudo ./install-impala.sh
+  - name: copy conf
+    copy: src=/etc/default/impala dest=/etc/default/ owner=root group=root mode=755
+  #- name: copy impala-lzo
+  #  copy: src=/tmp/impala-lzo-1.1.1-1.gplextras.p0.143.el6.x86_64.rpm dest=/tmp/
+  #- name: copy impala-lzo-debug
+  #  copy: src=/tmp/impala-lzo-debuginfo-1.1.1-1.gplextras.p0.143.el6.x86_64.rpm dest=/tmp/
+  #- name: copy impala impala sh
+  #  copy: src=script/install-impala.sh dest=/tmp/ owner=root group=root mode=755
+  #- name: run install impala.sh
+  #  command: chdir=/tmp/ sudo ./install-impala.sh
+  #- name: ln core
+  #  command: chdir=/etc/impala/conf sudo ln -s  /etc/hadoop/conf/core-site.xml
+  #- name: ln hdfs
+  #  command: chdir=/etc/impala/conf sudo ln -s  /etc/hadoop/conf/hdfs-site.xml

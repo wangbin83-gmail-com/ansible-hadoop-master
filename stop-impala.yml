@@ -1,0 +1,8 @@
+---
+# Start Hadoop.
+- hosts: cluster 
+  sudo: True
+
+  tasks:
+  - name: Start impala-server on slave
+    action: service name=impala-server state=stopped

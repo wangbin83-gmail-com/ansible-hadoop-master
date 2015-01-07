@@ -1,0 +1,8 @@
+---
+- hosts: secondmaster 
+  sudo: True
+  sudo_user: root 
+
+  tasks:
+  - name: Copy hosts
+    action: copy src=/etc/profile.d/hadoop.sh dest=/etc/profile.d/ owner=root group=root mode=0644

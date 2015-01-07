@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/script
+END
+tar.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/script/tar.sh
+END
+install-impala.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/script/install-impala.sh
+END
+add_ruser.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/script/add_ruser.sh
+END
+install_boost.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/script/install_boost.sh
+END
+install-hadoop-lzo.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/script/install-hadoop-lzo.sh
+END
+install_yum.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/script/install_yum.sh
+END
+untar_llvm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/script/untar_llvm.sh
+END
+install-R.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/script/install-R.sh
+END

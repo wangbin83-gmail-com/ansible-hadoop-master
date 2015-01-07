@@ -1,0 +1,18 @@
+---
+- hosts: cluster 
+  sudo: True
+
+  tasks:
+  #- name: copy Oracle JDK
+  #  copy: src=/tmp/jdk-7u45-linux-x64.rpm dest=/tmp mode=755
+
+  #- name: install jdk 7
+  #  command: sudo rpm -ivh /tmp/jdk-7u45-linux-x64.rpm
+
+  - name: Copy config $item 
+    action: template src=$item dest=$item owner=root group=root mode=0644
+    with_items:
+  #  - /etc/profile.d/hadoop.sh
+  #  - /etc/profile
+  #  - /etc/default/hadoop
+    - /etc/default/bigtop-utils

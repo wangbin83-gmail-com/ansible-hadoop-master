@@ -1,0 +1,7 @@
+---
+- hosts: hadoop
+  sudo: True
+
+  tasks:
+  - name: copy custom udf
+    copy: src=/usr/lib/hadoop/lib/wy_hive_customUDF.jar dest=/usr/lib/hadoop/lib/ owner=root group=root mode=755

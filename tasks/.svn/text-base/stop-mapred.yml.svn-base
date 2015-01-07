@@ -1,0 +1,5 @@
+---
+# Stop MapReduce
+- name: Stop MapReduce on datanodes
+  action: service name=hadoop-yarn-nodemanager state=stopped
+  tags: mapred

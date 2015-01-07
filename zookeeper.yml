@@ -1,0 +1,10 @@
+---
+- hosts: zookeeper
+  sudo: True
+  sudo_user: root 
+  tasks:
+  - name: Install zookeeper conf
+    action: template src=/etc/zookeeper/conf/zoo.cfg dest=/etc/zookeeper/conf/ owner=root group=root mode=644
+
+  - name: Start zookeeper 
+    action: service name=zookeeper-server state=restarted

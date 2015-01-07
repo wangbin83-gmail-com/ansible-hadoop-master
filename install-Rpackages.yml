@@ -1,0 +1,19 @@
+---
+- hosts: secondmaster
+  sudo: True
+
+  tasks:
+#  - name: copy R config
+#    copy: src=/usr/local/lib64/R/etc/Renviron dest=/usr/local/lib64/R/etc/ owner=root group=root mode=0644
+#
+#  - name: copy R packages
+#    copy: src=pkgs/Rpackages.tgz dest=/usr/local/lib64/R/library/ owner=root group=root mode=755
+#
+#  - name: exe install-rpackages.sh 
+#    command: chdir=/usr/local/lib64/R/library/ sudo tar xzf Rpackages.tgz
+
+  - name: copy single package
+    copy: src=/tmp/survey_3.29-5.tar.gz dest=/tmp/
+
+  - name: install single package
+    command: sudo /usr/local/bin/R CMD INSTALL -l /usr/local/lib64/R/library/ /tmp/survey_3.29-5.tar.gz

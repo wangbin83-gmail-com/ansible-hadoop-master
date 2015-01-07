@@ -1,0 +1,45 @@
+---
+# Copy Hadoop configuration files.
+- name: Make $hadoop_conf_dir
+  action: file dest=$hadoop_conf_dir state=directory owner=hdfs group=hadoop mode=0775
+
+- name: Set /etc/alternatives/hadoop link
+  action: file src=$hadoop_conf_dir dest=/etc/alternatives/hadoop-conf state=link
+
+- name: Set /etc/hadoop/conf link
+  action: file src=/etc/alternatives/hadoop-conf dest=/etc/hadoop/conf state=link
+
+- name: Copy config $item 
+  action: template src=templates/$item dest=/etc/hadoop/conf/$item owner=hdfs group=hadoop mode=0755
+  with_items:
+  - core-site.xml
+  - mapred-site.xml
+  - hdfs-site.xml
+  - yarn-site.xml
+  - yarn-env.sh
+  - hadoop-env.sh
+  tags: hadoop-config
+
+- name: Copy config $item 
+  action: template src=/usr/lib/hadoop/libexec/$item dest=/usr/lib/hadoop/libexec/$item owner=root group=root mode=0755
+  with_items:
+  - hadoop-config.sh
+  - hadoop-layout.sh
+  - hdfs-config.sh
+  - init-hdfs.sh
+  - mapred-config.sh
+  - yarn-config.sh
+  tags: hadoop-config
+
+- name: Copy hosts
+  action: template src=/etc/hosts dest=/etc/hosts owner=root group=root mode=0644
+
+- name: Install hadoop.sh and jdk 1.6
+  action: template src=/etc/default/hadoop dest=/etc/default/hadoop owner=root group=root mode=644
+
+- name: Make hive conf dir
+  action: file path=/etc/hive/conf/ state=directory owner=root group=root mode=0775
+
+- name: Install hive conf
+  action: template src=/etc/hive/conf/hive-site.xml dest=/etc/hive/conf/ owner=root group=root mode=644
+  tags: hive

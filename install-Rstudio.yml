@@ -1,0 +1,20 @@
+---
+- hosts: secondmaster
+  sudo: True
+
+  tasks:
+ # - name: copy Rstudio
+ #   copy: src=/export/install/rstudio-server-0.97.551-x86_64.rpm dest=/tmp/ owner=root group=root mode=755
+
+ # - name: install
+ #   command: chdir=/tmp/ sudo rpm -ivh --nodeps rstudio-server-0.97.551-x86_64.rpm
+
+  - name: Copy config $item 
+    action: template src=$item dest=$item owner=root group=root mode=0644
+    with_items:
+    - /etc/rstudio/rserver.conf
+    - /etc/rstudio/rsession.conf
+
+  - name: Start rstudio-server on slave
+    action: service name=rstudio-server state=started
+

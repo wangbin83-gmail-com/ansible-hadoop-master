@@ -1,0 +1,11 @@
+---
+# Stop HDFS.
+#- name: Stop HDFS on datanodes
+#  action: service name=hadoop-hdfs-datanode state=stopped
+#  when: '$is_worker'
+#  tags: hdfs
+
+- name: Stop MapReduce on datanodes
+  command: killall -9 -u hdfs
+  when: '$is_worker'
+  tags: mapred

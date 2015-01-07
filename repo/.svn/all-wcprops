@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/repo
+END
+cloudera.repo
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/repo/cloudera.repo
+END
+CentOS-6.3-Base.repo
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mysvn/!svn/ver/19/ansible-hadoop-master/repo/CentOS-6.3-Base.repo
+END
